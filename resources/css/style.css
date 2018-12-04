@@ -32,10 +32,14 @@ nav img {
   margin-right: auto;
 }
 
-.menu {
+.nav {
   margin-right: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 /*banner */
@@ -105,6 +109,7 @@ nav img {
   display: block;
 }
 
+
 .logo-container span {
   text-align: center;
   display: inline-block;
@@ -114,23 +119,214 @@ nav img {
 
 /* information section */
 
+.mobile-info-container {
+  display: none;
+}
+
 .info-container {
   display: flex;
+  width: 960px;
+  margin: auto;
 }
 
-#info-block {
-  width: 10rem;
-}
-
-.info-block span {
+.info-block-1 {
   background-color: cadetblue;
   padding-left: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  width: 10rem;
+  display: inline-block;
   color: white;
   font-weight: bold;
+  position: relative;
+  left: 10%;
 }
 
-.info-block p {
+.info-block-2 {
+  background-color: cadetblue;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 10rem;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  left: 30%;
+}
+
+.info-text-1 {
   width: 35%;
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  margin-top: 1rem;
+}
+
+.info-text-2 {
+  width: 35%;
+  display: inline-block;
+  position: relative;
+  margin-left: 5%;
+  left: 11%;
+  margin-top: 1rem;
+}
+
+/* footer */
+
+footer .container {
+  background-color: azure;
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+footer img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+  width: auto;
+  display: inline-block;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+.banner {
+  height: 30rem;
+  margin: 0;
+
+}
+
+  .banner-text {
+    padding: 0.75rem 4rem;
+    margin-right: 5rem;
+    font-size: 1.33rem;
+    position: relative;
+    bottom: 3rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 520px) {
+
+  .nav {
+    display: none;
+  }
+
+.mobile-menu {
+  display: inline-block;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  }
+
+.banner {
+  background-image: url("../images/glasses-bg.png");
+  background-position: 20%;
+  background-size: cover;
+  margin-bottom: 3.77rem;
+
+}
+
+.banner-text {
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 9rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.logo-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-container span {
+  font-size: 0.77rem;
+  padding-top: 1rem;
+
+}
+
+.img-container {
+  padding-top: 1.54rem;
+}
+
+
+
+
+.info-container {
+  display: none;
+}
+
+.mobile-info-container {
+  display: block;
+
+}
+
+.info-block-1 {
+  width: 100%;
+  position: relative;
+  display: block;
+  left: 0;
+  text-align: center;
+}
+
+.info-block-2 {
+  width: 100%;
+  display: block;
+  left: 0;
+  text-align: center;
+  margin-top: 4rem;
+
+}
+
+.info-text-1 {
+  display: block;
+  width: 95%;
+  position: relative;
+  left: 0;
+  padding-left: 1%;
+  font-size: 0.77rem;
+
+}
+
+.info-text-2 {
+  display: block;
+  width: 95%;
+  position: relative;
+  left: 0;
+  padding-left: 1%;
+  margin-left: 0;
+  font-size: 0.77rem;
+
+}
+
+footer span {
+  display: none;
+}
+
+footer img {
+position: relative;
+left: 25%;
+margin: 0;
 }
